@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Train;
+use Illuminate\Routing\RouteRegistrar;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +16,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    dd(Train::all());
     return view('home');
 });
