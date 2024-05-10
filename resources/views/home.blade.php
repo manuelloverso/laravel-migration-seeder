@@ -8,6 +8,7 @@
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Company</th>
+                        <th scope="col">Departure Date</th>
                         <th scope="col">Departure Station</th>
                         <th scope="col">Arrival Station</th>
                         <th scope="col">Departure Time</th>
@@ -19,6 +20,7 @@
                         <tr>
                             <th scope="row">{{ $train->id }}</th>
                             <td>{{ ucfirst($train->company) }}</td>
+                            <td>{{ ucfirst($train->departure_date) }}</td>
                             <td>{{ ucfirst($train->departure_station) }}</td>
                             <td>{{ ucfirst($train->arrival_station) }}</td>
                             <td>{{ $train->departure_time }}</td>
