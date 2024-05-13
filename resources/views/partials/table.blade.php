@@ -13,6 +13,7 @@
                     <th scope="col">Arrival Station</th>
                     <th scope="col">Departure Time</th>
                     <th scope="col">Arrival Time</th>
+                    <th scope="col">Can Book</th>
                     <th scope="col">See more</th>
 
                 </tr>
@@ -22,11 +23,18 @@
                     <tr>
                         <th scope="row">{{ $train->id }}</th>
                         <td>{{ ucfirst($train->company) }}</td>
-                        <td>{{ ucfirst($train->departure_date) }}</td>
+                        <td>{{ $train->departure_date }}</td>
                         <td>{{ ucfirst($train->departure_station) }}</td>
                         <td>{{ ucfirst($train->arrival_station) }}</td>
                         <td>{{ $train->departure_time }}</td>
                         <td>{{ $train->arrival_time }}</td>
+                        <td>
+                            @if ($train->departure_date >= date('Y-m-d'))
+                                <span>✅</span>
+                            @else
+                                <span>❌</span>
+                            @endif
+                        </td>
                         <td><a class="btn btn-info" href="{{ route('train', ['id' => $key]) }}">See more</a></td>
                     </tr>
                 @endforeach
