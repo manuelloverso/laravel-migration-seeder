@@ -1,1 +1,9 @@
-@import '~bootstrap/scss/bootstrap';
+@use "partials/header";
+@import "~bootstrap/scss/bootstrap";
+
+$bg-red: #fa5252;
+
+body {
+    background-color: $bg-red;
+    color: white;
+}

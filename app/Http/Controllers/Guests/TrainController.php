@@ -24,4 +24,11 @@ class TrainController extends Controller
         $trains = Train::where('departure_date', '>=', date('Y-m-d'))->get();
         return view('next', compact('trains'));
     }
+
+    public function singleTrain($id)
+    {
+        //dd(Train::all());
+        $train = Train::all()[$id];
+        return view('train', compact('train'));
+    }
 }
