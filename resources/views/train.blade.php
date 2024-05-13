@@ -1,7 +1,8 @@
 @extends('layouts.app')
 @section('content')
     <div class="container">
-        <div class="col-4">
+        <h4 class="mb-3">The best website for those who wanna be late on meetings</h4>
+        <div class="col-4 mb-5">
             <div class="card">
                 <div class="card-body">
                     <h4>{{ ucfirst($train->company) }}</h4>
