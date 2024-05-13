@@ -2,7 +2,7 @@
     <div class="container">
         <div class="d-flex justify-content-between align-items-center">
             <div class="logo">
-                <h1>BADTRAINS.COM</h1>
+                <h1>LATETRAINS.COM</h1>
             </div>
             <nav class="d-flex gap-3">
                 <a href="{{ route('home') }}">All Trains</a>

@@ -1,5 +1,5 @@
 @extends('partials.table')
 
 @section('table-heading')
-    <h3>Trains leaving in the next few days:</h3>
+    <h4>Trains leaving in the next few days:</h4>
 @endsection

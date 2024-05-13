@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         @yield('table-heading')
-        <table class="table table-danger table-striped">
+        <table class="table table-danger table-striped mb-5">
             <thead>
                 <tr>
                     <th scope="col">#</th>
